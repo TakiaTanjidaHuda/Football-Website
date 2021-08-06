@@ -1,0 +1,156 @@
+/* Upper Style  */
+h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: #FFFFFF;
+    margin-top: -25px;
+}
+.upper-part{
+    display: flex;
+    background-color: darkblue;
+    margin-bottom: 72px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+.detail {
+    width: 485px;
+    height: 230px;
+    padding-left: 156px;
+    padding-top: 207px;
+
+}
+.browse {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    padding : 10px 24px;
+    color: white;
+    background-color: #E02C6D;
+    
+}
+.upper-photo img{
+    width: 556.01px;
+    height: 438px;
+    left: 1299.01px;
+    top: 153px;
+}
+.upper-photo:hover{
+    transform: scale(1.3);
+}
+.detail:hover{
+    transform: scale(1.3);
+}
+/* Album style  */
+h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 20px ;
+    color: #18191F;
+}
+p{  
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: 13px;
+    color: #6C6C6C;
+}
+.photo-album{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+    padding-left: 80px;
+}  
+.photo-frame{
+    width: 300px;
+    height: 385px;
+    background-color: #FFFFFF;
+    border: 1px solid white;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 15px 15px 30px 15px;
+}
+.photo img{
+    width: 300px;
+    height: 256px;
+}
+.photo-detail{
+    width: 300px;
+    height: 154px;
+}
+ /* Flip Card Style  */
+#flip-title{
+    text-align: center;
+    padding-top: 50px;
+    color: teal;
+}
+.flip-card {
+    display: flex;
+    
+    margin-top: 70px;
+    margin-bottom: 400px;
+  }
+  
+.flip-card-inner {
+    
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  
+.flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+  }
+ /* Footer Style  */
+.foot img{
+     width: 20%;
+     padding-top: 60px;
+     padding-left: 540px;
+ }
+ .logo img{
+     width: 5%;
+ }
+.logo{
+    padding-left: 610px;
+}
+ /* Media Quaries  */
+  /* Mobile Device  */
+@media only screen and (max-width:688px) {
+    .upper-part{
+        width: 500px;
+        display: block;
+        justify-content: center;
+        margin-left: 70px;
+        
+    }
+    .photo-album{
+        grid-template-columns: repeat(1,1fr) ;
+        justify-content: center;
+        width: 500px;
+    }
+    .flip-card{
+         grid-template-columns: repeat(1,1fr);
+         transition: transform 0.6s;
+         justify-content: center;
+
+    }
+    .last{
+        align-items: center;
+    }
+}
+    
+   
